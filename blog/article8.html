@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QTQKY3YVMT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-QTQKY3YVMT');
+</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Size Wire for Long Runs — 100, 200, and 300 Feet | WiredAndBuilt</title>
+  <meta name="description" content="Voltage drop kills performance on long wire runs. This guide shows you how to size wire for 100, 200, and 300 foot runs for any circuit — EV chargers, subpanels, pumps, and more.">
+  <meta name="keywords" content="wire size for long runs, voltage drop calculator, NEC wire sizing, 100 foot wire run, 200 foot wire run, 300 foot wire run, wire gauge for distance">
+  <meta property="og:title" content="How to Size Wire for Long Runs — 100, 200, and 300 Feet">
+  <meta property="og:description" content="Voltage drop kills performance on long wire runs. This guide shows you how to size wire for 100, 200, and 300 foot runs for any circuit — EV chargers, subpanels, pumps, and more.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://wiredandbuilt.com/blog/article8.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://wiredandbuilt.com/blog/article8.html">
+  <link rel="stylesheet" href="../styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How to Size Wire for Long Runs — 100, 200, and 300 Feet",
+    "author": {"@type": "Person", "name": "WiredAndBuilt"},
+    "datePublished": "2026-04-14",
+    "dateModified": "2026-04-14",
+    "description": "Voltage drop kills performance on long wire runs. This guide shows how to size wire for 100, 200, and 300 foot runs for any circuit."
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../" class="logo">Wired<span>And</span>Built</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('nav').classList.toggle('open')">&#9776;</button>
+      <nav>
+        <a href="../">Home</a>
+        <a href="../#articles">Articles</a>
+        <a href="../#newsletter">Newsletter</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="article-header">
+    <p class="breadcrumb"><a href="../">Home</a> &rarr; <a href="../#articles">Articles</a> &rarr; Wire Sizing for Long Runs</p>
+    <h1>How to Size Wire for Long Runs — 100, 200, and 300 Feet</h1><img src="../images/card8-wire-sizing.jpg" alt="Electrical wire copper conductors" style="width:100%;border-radius:8px;margin:1.5rem 0;">
+    <div class="article-meta">
+      <span>By WiredAndBuilt</span>
+      <span>April 14, 2026</span>
+      <span>9 min read</span>
+    </div>
+  </div>
+
+  <article class="article-content">
+
+    <div class="toc">
+      <h4>In This Guide</h4>
+      <ul>
+        <li><a href="#why-voltage-drop-matters">Why Voltage Drop Matters</a></li>
+        <li><a href="#the-formula">The Voltage Drop Formula (Simplified)</a></li>
+        <li><a href="#100-foot-runs">Sizing Wire for 100-Foot Runs</a></li>
+        <li><a href="#200-foot-runs">Sizing Wire for 200-Foot Runs</a></li>
+        <li><a href="#300-foot-runs">Sizing Wire for 300-Foot Runs</a></li>
+        <li><a href="#real-examples">Real-World Circuit Examples</a></li>
+        <li><a href="#nec-3-percent">NEC 3% Rule — When It Applies</a></li>
+        <li><a href="#common-mistakes">Five Mistakes That Burn Runs</a></li>
+      </ul>
+    </div>
+
+    <p>You just finished running conduit 200 feet across the property to a subpanel in the shop. You used 12 AWG wire because that's what you had in the truck. Six months later, your table saw stalls under load and your LED shop lights flicker when the heater kicks on. That's voltage drop — and it's entirely preventable if you size the wire correctly <em>before</em> you dig the trench.</p>
+
+    <p>Wire sizing for long runs is one of the most practical skills in electrical work. It applies whether you're wiring a garage subpanel, an EV charger, a well pump, or a 240V shop tool 300 feet from your main panel. The math is straightforward. This guide walks through it.</p>
+
+    <h2 id="why-voltage-drop-matters">Why Voltage Drop Matters</h2>
+
+    <p>Every foot of wire has resistance. As current flows through that resistance, voltage is lost along the way — and that lost voltage doesn't power your tools or devices. At the end of a long run, your equipment sees less than what the panel is supplying.</p>
+
+    <p>The NEC considers a <strong>3% voltage drop</strong> on a feeder or branch circuit acceptable. Industry best practice (and what I'd call the smart threshold) is to keep it under <strong>3% for the feeders</strong> and <strong>5% total from the service entrance to the furthest outlet</strong>. Beyond 5%, you're asking for trouble: motors overheat, devices misbehave, and you waste energy as heat in the wire itself.</p>
+
+    <p>The formula for voltage drop is:</p>
+
+    <pre><code>VD = (2 × K × I × L) / CM</code></pre>
+
+    <p>Where:</p>
+    <ul>
+      <li><strong>K</strong> = Resistivity of conductor (12.9 for copper at 75°C; 21.2 for aluminum)</li>
+      <li><strong>I</strong> = Current in amps</li>
+      <li><strong>L</strong> = One-way length in feet</li>
+      <li><strong>CM</strong> = Wire circular mils (cross-sectional area)</li>
+    </ul>
+
+    <p>You can also use an online voltage drop calculator and skip the long division — which is what most working electricians do in the field. But understanding the formula helps you sanity-check the numbers.</p>
+
+    <h2 id="the-formula">The Voltage Drop Formula (Simplified)</h2>
+
+    <p>Here's a fast way to estimate wire size without pulling out a calculator every time:</p>
+
+    <p><strong>For copper wire at 120V, single-phase:</strong></p>
+
+    <pre><code>Required CM = (2 × 12.9 × Amps × Length) / Acceptable VD</code></pre>
+
+    <p>If you want to stay under 3% drop on a 120V circuit: use 0.03 × 120V = 3.6V as your acceptable drop. For 240V circuits: 0.03 × 240V = 7.2V.</p>
+
+    <p>Plug in your numbers. Then compare the resulting circular mils to a wire size chart. Common copper AWG sizes and their circular mils:</p>
+
+    <ul>
+      <li><strong>14 AWG</strong> — 4,107 CM</li>
+      <li><strong>12 AWG</strong> — 6,530 CM</li>
+      <li><strong>10 AWG</strong> — 10,380 CM</li>
+      <li><strong>8 AWG</strong> — 16,510 CM</li>
+      <li><strong>6 AWG</strong> — 26,240 CM</li>
+      <li><strong>4 AWG</strong> — 41,740 CM</li>
+      <li><strong>3 AWG</strong> — 52,620 CM</li>
+      <li><strong>2 AWG</strong> — 66,360 CM</li>
+      <li><strong>1 AWG</strong> — 83,690 CM</li>
+      <li><strong>1/0 AWG</strong> — 105,600 CM</li>
+      <li><strong>2/0 AWG</strong> — 133,100 CM</li>
+    </ul>
+
+    <h2 id="100-foot-runs">Sizing Wire for 100-Foot Runs</h2>
+
+    <p>A 100-foot run is common for garage subpanels, air compressors, and long branch circuits. Here's how wire size scales with load at 120V (copper, 3% drop):</p>
+
+    <ul>
+      <li><strong>15 amp load</strong> — 12 AWG handles this easily (6,530 CM vs. 7,740 CM needed — just barely). Bump to 10 AWG if the run is close to 100 feet full.</li>
+      <li><strong>20 amp load</strong> — 12 AWG at 100 feet is borderline at 3%. Use 10 AWG for headroom (10,380 CM vs. 10,320 CM needed — basically maxed out).</li>
+      <li><strong>30 amp load</strong> — 10 AWG is too small. Use 8 AWG (16,510 CM vs. 15,480 CM needed — comfortable).</li>
+      <li><strong>40 amp load</strong> — 8 AWG works. 6 AWG gives you more margin.</li>
+    </ul>
+
+    <p>For 240V circuits at 100 feet, voltage drop is less punishing since the higher voltage means the same wattage draws less current. But if you're running a 30-amp 240V circuit (like an electric dryer or EV charger), 10 AWG is still tight — use 8 AWG.</p>
+
+    <h2 id="200-foot-runs">Sizing Wire for 200-Foot Runs</h2>
+
+    <p>At 200 feet, the numbers get serious. You need roughly double the wire area compared to a 100-foot run for the same current. Here's where most DIYers undersize wire:</p>
+
+    <ul>
+      <li><strong>15 amp load</strong> — 10 AWG minimum (12 AWG is now too small at 3%).</li>
+      <li><strong>20 amp load</strong> — 8 AWG. 10 AWG is maxed out at this distance.</li>
+      <li><strong>30 amp load</strong> — 6 AWG handles 30A at 200 feet at 3% (26,240 CM vs. 30,960 CM needed — get 4 AWG for comfort).</li>
+      <li><strong>40 amp load</strong> — 4 AWG minimum. 3 AWG if you want real headroom.</li>
+      <li><strong>50 amp load</strong> — 3 AWG at 3%. 2 AWG if you're running the full distance at full load regularly.</li>
+    </ul>
+
+    <p>At 200 feet, the difference between 10 AWG and 8 AWG on a 20A circuit isn't subtle — you're looking at roughly a 4.8% drop with 10 AWG versus 3% with 8 AWG. That 1.8% difference translates to real motors stalling and lights dimming.</p>
+
+    <h2 id="300-foot-runs">Sizing Wire for 300-Foot Runs</h2>
+
+    <p>300 feet is where you start making real wire size decisions. Most stock at the supply house won't cut it for higher-amp circuits without jumping to large-gauge wire that's expensive and hard to pull. Consider whether you can bump the voltage (go to 240V if possible) or use a subpanel closer to the load.</p>
+
+    <ul>
+      <li><strong>15 amp load</strong> — 8 AWG at 3% (just barely). Use 6 AWG if you want margin.</li>
+      <li><strong>20 amp load</strong> — 6 AWG. 8 AWG gives you roughly a 4.5% drop — too high for continuous loads.</li>
+      <li><strong>30 amp load</strong> — 4 AWG at 3%. This is getting into large, expensive wire. Consider running 240V to reduce current.</li>
+      <li><strong>40 amp load</strong> — 3 AWG at 3%. At 300 feet you're pulling into large aluminum territory (1/0 AL for 40A) to keep costs down, which is code-compliant for feeders.</li>
+    </ul>
+
+    <h2 id="real-examples">Real-World Circuit Examples</h2>
+
+    <h3>EV Charger — 50A, 150-foot Run</h3>
+
+    <p>A Level 2 EV charger pulling 50A at 240V over 150 feet: use 4 AWG copper or 2 AWG aluminum at 3% drop. Copper 6 AWG is too small (it would give you about a 4.5% drop). Yes, aluminum is fine for feeders this size and is significantly cheaper per foot.</p>
+
+    <h3>Well Pump — 20A, 250-foot Run</h3>
+
+    <p>A 230V well pump at 20A, 250 feet from the panel: use 6 AWG copper at 3% (or 4 AWG for margin). A 250-foot run with 10 AWG would drop over 8% — your pump motor will run hot and寿命 will suffer.</p>
+
+    <h3>Shop Subpanel — 100A feeder, 180-foot Run</h3>
+
+    <p>A 100A feeder to a detached shop 180 feet away: use 1 AWG copper or 3/0 aluminum. This is where aluminum really makes sense cost-wise — 3/0 AL runs about half the price of 1 AWG copper for the same ampacity. Terminations must be rated for aluminum.</p>
+
+    <h2 id="nec-3-percent">NEC 3% Rule — When It Applies</h2>
+
+    <p>The NEC 3% rule (technically Informational Note 4 in NEC 210.19) is a recommendation, not a code minimum in most jurisdictions. However:</p>
+
+    <ul>
+      <li><strong>Branch circuits</strong> — 3% from the branch breaker to the furthest outlet</li>
+      <li><strong>Feeders</strong> — 3% from the service entrance to the feeder breaker</li>
+      <li><strong>Combined total</strong> — Should not exceed 5% from the service entrance to the furthest device</li>
+    </ul>
+
+    <p>Some inspectors do enforce the 3% rule strictly, especially on commercial jobs. Others don't check it at all. The right call: size for 3% even if your local inspector wouldn't fail you for 5%. The wire cost difference on a 200-foot run is usually $50–$100. That's cheap insurance against callbacks and unhappy customers.</p>
+
+    <h2 id="common-mistakes">Five Mistakes That Burn Runs</h2>
+
+    <p><strong>1. Using length of wire instead of one-way length in the formula.</strong> Voltage drop is calculated on one-way distance. If you use round-trip distance, you'll oversize your wire and waste money.</p>
+
+    <p><strong>2. Ignoring the temperature rating of the wire.</strong> Wire ampacity changes with temperature. 75°C-rated THHN in a conduit with other conductors needs a correction factor. Use 75°C ampacities for most standard builds.</p>
+
+    <p><strong>3. Skipping the derate for continuous loads.</strong> If you're pulling 100% of a 30A circuit continuously (like an EV charger), size the wire for 125% of the load — so 37.5A. That means you need wire rated for 40A, not 30A.</p>
+
+    <p><strong>4. Forgetting three-phase.</strong> If you're on three-phase power (commercial/industrial), the voltage drop formula changes to: <code>VD = (1.732 × K × I × L) / CM</code>. The 1.732 (√3) factor accounts for the phase relationship. Sizing for three-phase with a single-phase formula gives you wrong numbers.</p>
+
+    <p><strong>5. Not planning for future capacity.</strong> If you're trenching for a 60A subpanel but only installing a 30A breaker today, run the wire for 60A anyway. The trench is the expensive part, not the wire. Future-you will thank present-you.</p>
+
+    <p>Wire sizing isn't complicated once you understand the relationship between current, distance, and conductor area. The math takes 30 seconds with a calculator. The pain of having to re-pull a run because you undersized it takes hours and costs 10x what a bigger wire would have.</p>
+
+    <p>Run the numbers before you dig.</p>
+
+    <hr style="border-color:#333;margin:3rem 0;">
+
+    <p><strong>Working on a long-run project?</strong> Check out our guide on <a href="article4.html">wiring 240V outlets</a> for more on circuit sizing and breaker selection.</p>
+
+  </article>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="../">Home</a>
+        <a href="../#articles">Articles</a>
+        <a href="../#newsletter">Newsletter</a>
+        <a href="../privacy-policy.html">Privacy Policy</a>
+        <a href="../affiliate-disclosure.html">Affiliate Disclosure</a>
+        <a href="../terms-of-service.html">Terms of Service</a>
+      </div>
+      <p>&copy; 2026 WiredAndBuilt. All rights reserved.</p>
+      <p style="margin-top:0.5rem;font-size:0.75rem;color:#888;">⚠️ <strong>Disclaimer:</strong> All content on WiredAndBuilt is for informational and educational purposes only. Any DIY, electrical, or mechanical projects you undertake are done at your own risk and skill level. Always follow local codes, manufacturer instructions, and consult a licensed professional when required. WiredAndBuilt assumes no liability for any injury, damage, or loss resulting from the use of information on this site.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
