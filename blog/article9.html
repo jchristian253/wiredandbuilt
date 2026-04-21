@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QTQKY3YVMT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-QTQKY3YVMT');
+</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Structured Wiring for New Construction — A Tradesman's Guide to Ethernet, Coax, and Low-Voltage Runs | WiredAndBuilt</title>
+  <meta name="description" content="Everything a builder or DIYer needs to know about structured wiring in new construction: Cat6 vs Cat6a, Ethernet port placement, coax runs, backer boxes, and how to plan low-voltage before the walls close up.">
+  <meta name="keywords" content="structured wiring, Cat6 ethernet, new construction wiring, low voltage wiring, ethernet drops, home network wiring, coaxial cable runs, structured wiring plan">
+  <meta property="og:title" content="Structured Wiring for New Construction — A Tradesman's Guide to Ethernet, Coax, and Low-Voltage Runs">
+  <meta property="og:description" content="Plan and pull structured wiring the right way before your walls close up. Cat6 vs Cat6a, port placement, backer boxes, and a clean low-voltage strategy.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://wiredandbuilt.com/blog/article9.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://wiredandbuilt.com/blog/article9.html">
+  <link rel="stylesheet" href="../styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Structured Wiring for New Construction — A Tradesman's Guide to Ethernet, Coax, and Low-Voltage Runs",
+    "author": {"@type": "Person", "name": "WiredAndBuilt"},
+    "datePublished": "2026-04-21",
+    "dateModified": "2026-04-21",
+    "description": "Plan and pull structured wiring the right way before your walls close up. Cat6 vs Cat6a, port placement, backer boxes, and a clean low-voltage strategy."
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../" class="logo">Wired<span>And</span>Built</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('nav').classList.toggle('open')">&#9776;</button>
+      <nav>
+        <a href="../">Home</a>
+        <a href="../#articles">Articles</a>
+        <a href="../#newsletter">Newsletter</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="article-header">
+    <p class="breadcrumb"><a href="../">Home</a> &rarr; <a href="../#articles">Articles</a> &rarr; Structured Wiring Guide</p>
+    <h1>Structured Wiring for New Construction — A Tradesman's Guide to Ethernet, Coax, and Low-Voltage Runs</h1><img src="../images/card9-structured-wiring.jpg" alt="Structured ethernet and low-voltage wiring in a new home build" style="width:100%;border-radius:8px;margin:1.5rem 0;">
+    <div class="article-meta">
+      <span>By WiredAndBuilt</span>
+      <span>April 21, 2026</span>
+      <span>9 min read</span>
+    </div>
+  </div>
+
+  <article class="article-content">
+
+    <div class="toc">
+      <h4>In This Guide</h4>
+      <ul>
+        <li><a href="#why">Why Structured Wiring Matters</a></li>
+        <li><a href="#cat6-vs-cat6a">Cat6 vs Cat6a — Which Should You Run?</a></li>
+        <li><a href="#where">Where to Place Ethernet Ports</a></li>
+        <li><a href="#the-plan">How to Plan Your Run Locations</a></li>
+        <li><a href="#pulling">Pulling Wire Like a Pro</a></li>
+        <li><a href="#backer">Backer Boxes and Termination</a></li>
+        <li><a href="#coax">Don't Skip the Coax Runs</a></li>
+        <li><a href="#panel">The Structured Wiring Panel</a></li>
+      </ul>
+    </div>
+
+    <p>Every new house needs it. Almost no new construction does it right. I'm talking about <strong>structured wiring</strong> — the low-voltage infrastructure that sits behind your walls and makes everything else work: ethernet drops, coax runs, speaker wire, and the rest. Get it wrong and you'll be tearing open drywall in five years to fish wire you should have pulled on day one.</p>
+
+    <p>As someone who works with both electrical systems and smart home installs, I've seen this play out dozens of ways. The good news: it doesn't take a specialist to do this right. It takes a plan.</p>
+
+    <h2 id="why">Why Structured Wiring Matters</h2>
+
+    <p>WiFi is great. WiFi 6 is better. But WiFi has limits that no access point can overcome — penetration loss through walls, co-channel interference from neighbors, and the hard physics of shared spectrum. When you're running a NAS, streaming 4K to multiple devices, working from home on a VPN, or automating a full smart home, wired ethernet is still the backbone that makes it all work smoothly.</p>
+
+    <p>Structured wiring in new construction is cheap compared to retrofitting. You're already inside open walls. The marginal cost of running an extra Cat6 cable to every room is maybe $15–$20 per drop when you're at the framing stage. After the drywall goes up and you decide you need a hardwired connection in the home office, you're looking at $300–$500 per drop to fish it through finished walls.</p>
+
+    <p>Do it once. Do it right.</p>
+
+    <h2 id="cat6-vs-cat6a">Cat6 vs Cat6a — Which Should You Run?</h2>
+
+    <p><strong>Cat6</strong> handles 10Gbps up to 55 meters and 1Gbps at full 100-meter channel length. For most residential uses — computers, TVs, game consoles, access points — it's more than enough headroom.</p>
+
+    <p><strong>Cat6a</strong> (the "a" stands for "augmented") sustains 10Gbps at the full 100 meters with tighter crosstalk specs. If you're running cable in walls adjacent to electrical runs, the better shielding on Cat6a gives you more margin against interference. It's also what you'd want if you're future-proofing for multi-gig internet speeds coming down from fiber or DOCSIS 4.0 cable modems.</p>
+
+    <p>For new construction, <strong>I recommend Cat6a for any runs longer than 50 feet or runs that parallel electrical wiring</strong>. For short drops to desk locations where your patch cable is already doing the heavy lifting, plain Cat6 is fine. Budget difference: about $15–$20 per 500-foot spool — not enough to stress over if you're doing a whole house.</p>
+
+    <div style="background:#262626;border:1px solid #333;border-radius:10px;padding:2rem;margin:2rem 0;">
+      <h3 style="margin-bottom:0.25rem;color:#E8640A;font-size:1.4rem;">📦 My Recommended Gear for Structured Wiring</h3>
+      <p style="margin-bottom:1.5rem;color:#B0B0B0;font-size:0.95rem;">The must-have components for a clean, professional structured wiring install.</p>
+
+      <div style="display:flex;flex-direction:column;gap:1rem;">
+
+        <div style="display:flex;justify-content:space-between;align-items:center;background:#1D1D1D;border-radius:8px;padding:1rem 1.25rem;flex-wrap:wrap;gap:0.5rem;">
+          <div>
+            <strong style="color:#fff;">Cat6a Ethernet Cable (500ft Spool)</strong>
+            <p style="margin:0.2rem 0 0;color:#B0B0B0;font-size:0.9rem;">Solid copper, CMR-rated for in-wall use. 10Gbps-capable at full 100m.</p>
+          </div>
+          <a href="https://www.amazon.com/s?k=Cat6a+ethernet+cable+in-wall&tag=jchristian253-20" target="_blank" rel="nofollow noopener" style="background:#E8640A;color:#fff;padding:0.45rem 1rem;border-radius:6px;font-size:0.85rem;font-weight:600;white-space:nowrap;text-decoration:none;">Buy on Amazon &rarr;</a>
+        </div>
+
+        <div style="display:flex;justify-content:space-between;align-items:center;background:#1D1D1D;border-radius:8px;padding:1rem 1.25rem;flex-wrap:wrap;gap:0.5rem;">
+          <div>
+            <strong style="color:#fff;">Cat6a Keystones (10-Pack)</strong>
+            <p style="margin:0.2rem 0 0;color:#B0B0B0;font-size:0.9rem;">RJ45 keystones for clean wall-plate termination. Pick leviton or Legrand.</p>
+          </div>
+          <a href="https://www.amazon.com/s?k=Cat6a+keystone+jack+leviton&tag=jchristian253-20" target="_blank" rel="nofollow noopener" style="background:#E8640A;color:#fff;padding:0.45rem 1rem;border-radius:6px;font-size:0.85rem;font-weight:600;white-space:nowrap;text-decoration:none;">Buy on Amazon &rarr;</a>
+        </div>
+
+        <div style="display:flex;justify-content:space-between;align-items:center;background:#1D1D1D;border-radius:8px;padding:1rem 1.25rem;flex-wrap:wrap;gap:0.5rem;">
+          <div>
+            <strong style="color:#fff;">Structured Wiring Panel (32-Inch)</strong>
+            <p style="margin:0.2rem 0 0;color:#B0B0B0;font-size:0.9rem;">Flush-mount panel with room for patch panel, router, switch, and UPS.</p>
+          </div>
+          <a href="https://www.amazon.com/s?k=structured+wiring+panel+32+inch&tag=jchristian253-20" target="_blank" rel="nofollow noopener" style="background:#E8640A;color:#fff;padding:0.45rem 1rem;border-radius:6px;font-size:0.85rem;font-weight:600;white-space:nowrap;text-decoration:none;">Buy on Amazon &rarr;</a>
+        </div>
+
+        <div style="display:flex;justify-content:space-between;align-items:center;background:#1D1D1D;border-radius:8px;padding:1rem 1.25rem;flex-wrap:wrap;gap:0.5rem;">
+          <div>
+            <strong style="color:#fff;">Coax Cable (500ft, RG6 Quad Shield)</strong>
+            <p style="margin:0.2rem 0 0;color:#B0B0B0;font-size:0.9rem;">For satellite, cable, and over-air TV. Quad shield outperforms quad shield for long runs.</p>
+          </div>
+          <a href="https://www.amazon.com/s?k=RG6+quad+shield+coax+cable&tag=jchristian253-20" target="_blank" rel="nofollow noopener" style="background:#E8640A;color:#fff;padding:0.45rem 1rem;border-radius:6px;font-size:0.85rem;font-weight:600;white-space:nowrap;text-decoration:none;">Buy on Amazon &rarr;</a>
+        </div>
+
+      </div>
+
+      <p style="margin-top:1.25rem;color:#888;font-size:0.78rem;line-height:1.5;">As an Amazon Associate, I earn from qualifying purchases. These links help support WiredAndBuilt at no extra cost to you. See our <a href="../affiliate-disclosure.html" style="color:#E8640A;">Affiliate Disclosure</a> for details.</p>
+    </div>
+
+    <h2 id="where">Where to Place Ethernet Ports</h2>
+
+    <p>The minimum I'd put in any house:</p>
+
+    <ul>
+      <li><strong>One per bedroom</strong> (two if you work from home)</li>
+      <li><strong>Two in the living room</strong> (TV + game console/Apple TV + anything else)</li>
+      <li><strong>One in the kitchen</strong> (for a smart display or future countertop device)</li>
+      <li><strong>One in the utility/mud room</strong> (for a hub or security panel)</li>
+      <li><strong>Two in the home office</strong> (desktop + printer or second device)</li>
+      <li><strong>One at every access point location</strong> (ceiling or wall mount)</li>
+    </ul>
+
+    <p>The access point drops are the ones people skip and regret. If you're putting in WiFi 6 access points — and you should be — they need a wired backhaul. Don't rely on mesh wireless backhaul; run ethernet to a central hallway or ceiling location on each floor. One AP per 1,000–1,500 sq ft is a good rule of thumb.</p>
+
+    <h2 id="the-plan">How to Plan Your Run Locations</h2>
+
+    <p>Walk the house with the framing exposed. Stand in each room. Ask yourself:</p>
+
+    <ul>
+      <li>Where will the desk be?</li>
+      <li>Where will the TV mount?</li>
+      <li>Where will the access point go?</li>
+      <li>Will any smart home controller or security panel live here?</li>
+    </ul>
+
+    <p>Mark stud bays with painter's tape. Label each drop on the stud ("Bathroom 1 — AP", "Office — Desk"). Keep runs short and direct — avoid kinks, unnecessary bends, and parallel runs with electrical cable. Maintain at least 12 inches of separation from dedicated electrical circuits where possible. If you have to cross an electrical run, do it perpendicular.</p>
+
+    <h2 id="pulling">Pulling Wire Like a Pro</h2>
+
+    <p>Use fish tape or a pull string with a mousetrap (a simple home-made pull grip). Don't overfill conduit — fill percentage rules apply. For a single Cat6 run through stud bay holes, you're fine. For conduit runs, check the fill chart: three Cat6 cables in 3/4" EMT is tight; 1" EMT is better.</p>
+
+    <p>Leave <strong>at least 12 inches of extra slack</strong> at each end before you cut. You can always trim; you can't add. Coil the slack loosely in the back of the device box or in the structured panel — don't cinch it tight. Sharp bends kill signal.</p>
+
+    <p>Label both ends of every cable before you pull. Use a label maker with the room and port number ("Office-DSK-01", "Living-TV-01"). This takes five seconds per cable and saves hours later.</p>
+
+    <h2 id="backer">Backer Boxes and Termination</h1>
+
+    <p>Single-gang old-work or new-work boxes work fine for keystone ports. I prefer <strong>single-gang low-voltage rings</strong> (sometimes called "old work boxes" for renovation) because they're shallow and give you plenty of room to work in the gap behind the drywall. Set them flush with the drywall surface — proud boxes are a pain to trim around.</p>
+
+    <p>Terminate keystone jacks with a 110-style punch-down tool. Don't eyeball it — use the built-in diagram on the jack. Wire to T568B for data (that's the standard). Test every drop with a basic cable tester ($20 on Amazon) before you close walls. The cheap testers won't catch subtle crosstalk issues, but they'll catch crossed pairs and opens, which account for 90% of failures.</p>
+
+    <h2 id="coax">Don't Skip the Coax Runs</h2>
+
+    <p>Streaming services are everywhere, but coax isn't dead. Over-air TV (OTA) is free and uncompressed — a antenna in the attic feeding four rooms via RG6 coax lets every TV in the house get local news and major network TV in 1080p without internet. Cable and satellite also still use coax to every room, and you'll want it at the TV locations even if you don't subscribe today.</p>
+
+    <p>Run RG6 quad-shield coax to:</p>
+
+    <ul>
+      <li>Every TV location (even ones you're running ethernet to — you'll want both)</li>
+      <li>The attic or roof (for an over-air antenna)</li>
+      <li>The structured panel location</li>
+    </ul>
+
+    <p>Use compression fittings, not twist-on connectors. Compression RG6 with a proper $15 tool kit is reliable and takes two minutes per fitting.</p>
+
+    <h2 id="panel">The Structured Wiring Panel</h2>
+
+    <p>Every wire in the house should home-run to a central structured wiring panel — typically located in a utility closet, basement, or garage. This is where your ethernet switch, router, and any coax splitters live. Don't undersize it. Get the biggest panel that fits your space; you'll fill it faster than you think.</p>
+
+    <p>The minimum I'd put in the panel:</p>
+
+    <ul>
+      <li><strong>Ethernet switch</strong> — 8-port PoE+ if you're running access points or cameras</li>
+      <li><strong>Patch cables</strong> — color-coded short runs from the switch to each keystone</li>
+      <li><strong>Coax splitter</strong> (if using OTA antenna or cable)</li>
+      <li><strong>UPS</strong> — keeps your network running during brief outages</li>
+    </ul>
+
+    <p>Terminate all ethernet runs at the panel using a patch panel — not individual keystone jacks. A 24-port patch panel mounted in the structured panel gives you clean termination and room to grow. Punch down each cable with a 110 tool, run your short patch cords from panel to switch, and you're done.</p>
+
+    <h2>The Bottom Line</h2>
+
+    <p>Structured wiring is one of the highest-ROI things you can do during new construction or a major renovation. The materials are cheap. The labor is minimal if you're already at the framing stage. The value it adds to a house — in convenience, network performance, and resale — is enormous compared to the cost of doing it right the first time.</p>
+
+    <p>Sketch your drop locations on paper before you buy a single spool of cable. Label everything. Test before you close walls. And if you're hiring a low-voltage contractor, make sure they understand structured wiring standards — not just "I know how to run wire." Ask about T568B termination, backer boxes, and panel layout. If they look at you funny, hire someone else.</p>
+
+    <hr style="border-color:#333;margin:3rem 0;">
+
+    <p><strong>Building out your smart home?</strong> I've got more guides on network setup, sensor integration, and Home Assistant on the site. Start with the <a href="article1.html">weather station build</a> or the <a href="article5.html">PoE access point guide</a>.</p>
+
+  </article>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="../">Home</a>
+        <a href="../#articles">Articles</a>
+        <a href="../#newsletter">Newsletter</a>
+        <a href="../privacy-policy.html">Privacy Policy</a>
+        <a href="../affiliate-disclosure.html">Affiliate Disclosure</a>
+        <a href="../terms-of-service.html">Terms of Service</a>
+      </div>
+      <p>&copy; 2026 WiredAndBuilt. All rights reserved.</p>
+      <p style="margin-top:0.5rem;font-size:0.75rem;color:#888;">⚠️ <strong>Disclaimer:</strong> All content on WiredAndBuilt is for informational and educational purposes only. Any DIY, electrical, or mechanical projects you undertake are done at your own risk and skill level. Always follow local codes, manufacturer instructions, and consult a licensed professional when required. WiredAndBuilt assumes no liability for any injury, damage, or loss resulting from the use of information on this site.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
