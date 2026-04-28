@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QTQKY3YVMT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-QTQKY3YVMT');
+</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solar Power for Overlanding: How to Size a System for Your Truck Camp | WiredAndBuilt</title>
+  <meta name="description" content="Size a solar power system for overlanding truck camping. Calculate wattage needs, choose panels and controllers, and wire a clean dual-battery setup that actually works off-grid.">
+  <meta name="keywords" content="overlanding solar setup, truck solar power, van life solar, off-grid solar sizing, dual battery solar charger">
+  <meta property="og:title" content="Solar Power for Overlanding: How to Size a System for Your Truck Camp">
+  <meta property="og:description" content="A practical guide to sizing and installing solar on your overland rig — from wattage math to wiring the charge controller and battery bank.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://wiredandbuilt.com/blog/article10.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://wiredandbuilt.com/blog/article10.html">
+  <link rel="stylesheet" href="../styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Solar Power for Overlanding: How to Size a System for Your Truck Camp",
+    "author": {"@type": "Person", "name": "WiredAndBuilt"},
+    "datePublished": "2026-04-28",
+    "dateModified": "2026-04-28",
+    "description": "Size a solar power system for overlanding truck camping. Calculate wattage needs, choose panels and controllers, and wire a clean dual-battery setup."
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../" class="logo">Wired<span>And</span>Built</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('nav').classList.toggle('open')">&#9776;</button>
+      <nav>
+        <a href="../">Home</a>
+        <a href="../#articles">Articles</a>
+        <a href="../#newsletter">Newsletter</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="article-header">
+    <p class="breadcrumb"><a href="../">Home</a> &rarr; <a href="../#articles">Articles</a> &rarr; Overlanding Solar</p>
+    <h1>Solar Power for Overlanding: How to Size a System for Your Truck Camp</h1><img src="https://images.unsplash.com/photo-1531971589569-0d9370cbe1e5?w=1200&q=80" alt="Solar panels on overland truck roof rack in desert" style="width:100%;border-radius:8px;margin:1.5rem 0;" onerror="this.style.display='none'">
+    <div class="article-meta">
+      <span>By WiredAndBuilt</span>
+      <span>April 28, 2026</span>
+      <span>9 min read</span>
+    </div>
+  </div>
+
+  <article class="article-content">
+
+    <div class="toc">
+      <h4>In This Guide</h4>
+      <ul>
+        <li><a href="#why-solar">Why Add Solar to Your Overland Rig?</a></li>
+        <li><a href="#wattage">Step 1: Calculate Your Wattage Needs</a></li>
+        <li><a href="#panels">Step 2: Choose and Mount Your Panels</a></li>
+        <li><a href="#battery">Step 3: Size Your Battery Bank</a></li>
+        <li><a href="#controller">Step 4: Pick a Charge Controller</a></li>
+        <li><a href="#wiring">Step 5: Wire It All Together</a></li>
+        <li><a href="#tips">Pro Tips From 6 Months of Off-Grid Living</a></li>
+      </ul>
+    </div>
+
+    <p>After six months of weekend overlanding trips — running a fridge, charging phones, powering a CPAP, and occasionally running a laptop — I finally quit guessing at my power needs and did the math. Turns out I was dramatically overbuilding for some things and underbuilding for others. The result was a system that constantly surprised me with how often I ran out of power mid-trip.</p>
+
+    <p>So I rebuilt the whole thing from scratch: new panels, a proper charge controller, a second battery, and clean wiring. Here's exactly how to size and build an overlanding solar system that works — no guesswork, no surprises.</p>
+
+    <h2 id="why-solar">Why Add Solar to Your Overland Rig?</h2>
+
+    <p>The short answer: freedom. A well-sized solar system means you can park somewhere beautiful for three or four days and not think about power once. Your fridge stays running, your devices stay charged, and you don't have to fire up the engine just to keep your food cold.</p>
+
+    <p>Compared to a generator, solar is silent, has no moving parts, and produces power for free once you've paid the upfront cost. The tradeoff is that solar output varies with weather and season — but for most overlanding use cases in North America, a properly sized system handles three season travel just fine.</p>
+
+    <h2 id="wattage">Step 1: Calculate Your Wattage Needs</h2>
+
+    <p>Before you buy anything, you need to know how much power you actually use. This means listing every device, estimating daily hours of use, and running the math.</p>
+
+    <p>Here's the basic formula:</p>
+
+    <p><strong>Daily Wh (watt-hours) = Device Wattage × Hours per Day</strong></p>
+
+    <p>Here's a realistic example for a weekend overlanding setup:</p>
+
+    <ul>
+      <li><strong>50L fridge (Danlard DC50):</strong> 60W × 24 hrs × 35% duty cycle = ~500 Wh/day</li>
+      <li><strong>Phone charging:</strong> 20W × 2 phones × 1 hr = 40 Wh/day</li>
+      <li><strong>Laptop charge:</strong> 65W × 2 hrs = 130 Wh/day</li>
+      <li><strong>CPAP (if you use one):</strong> 30W × 8 hrs = 240 Wh/day</li>
+      <li><strong>LED camp lights +misc:</strong> 20W × 5 hrs = 100 Wh/day</li>
+    </ul>
+
+    <p><strong>Total: ~1,010 Wh/day</strong></p>
+
+    <p>That's a meaningful number. If you're running a smaller fridge or no CPAP, your needs drop significantly. Do your own math before buying anything.</p>
+
+    <h3>Winter Adjustment Factor</h3>
+
+    <p>If you overland in fall through early spring, you need to account for shorter days and lower sun angle. In Seattle (where I am), December generates roughly 40% of July's solar output. Add a 1.5x fudge factor to your daily Wh number for November through February use.</p>
+
+    <h2 id="panels">Step 2: Choose and Mount Your Panels</h2>
+
+    <p>For overland applications, there are two main choices: <strong>rigid hard-mount panels</strong> and <strong>portable folding panels</strong>. Each has a use case.</p>
+
+    <p><strong>Rigid hard-mount panels</strong> bolt permanently to your roof rack. They're always working when the rig is parked, require zero setup, and the wiring stays clean. The downside is that if you're parked in partial shade, you're stuck.</p>
+
+    <p><strong>Portable folding panels</strong> unfold and aim at the sun. They can track optimal sun angle (which rigid panels on a flat rack can't do), work around shade by repositioning, and store inside when you're driving. The tradeoff is setup time and having cables running across your campsite.</p>
+
+    <p>For most overlanders, I'd suggest a <strong>hybrid approach</strong>: a smaller hard-mount panel (100W) for maintenance charging while driving and while parked in a pinch, plus a portable folding panel (100-160W) for serious off-grid stops.</p>
+
+    <h3>How Many Watts Do You Need?</h3>
+
+    <p>As a starting rule of thumb, aim for enough panel wattage to replace your daily Wh needs in about 5 hours of good sun (a realistic average for most of the US April through September). Using our 1,010 Wh example:</p>
+
+    <p><strong>1,010 Wh ÷ 5 hours = ~200W of panel</strong></p>
+
+    <p>So a 200W panel setup handles this load in good conditions. Add the winter adjustment factor and you'd want 300W to be comfortable year-round.</p>
+
+    <div style="background:#262626;border:1px solid #333;border-radius:10px;padding:2rem;margin:2rem 0;">
+      <h3 style="margin-bottom:0.25rem;color:#E8640A;font-size:1.4rem;">🛒 My Recommended Overlanding Solar Gear</h3>
+      <p style="margin-bottom:1.5rem;color:#B0B0B0;font-size:0.95rem;">These are the components I run on my own rig after trying several configurations.</p>
+
+      <div style="display:flex;flex-direction:column;gap:1rem;">
+
+        <div style="display:flex;justify-content:space-between;align-items:center;background:#1D1D1D;border-radius:8px;padding:1rem 1.25rem;flex-wrap:wrap;gap:0.5rem;">
+          <div>
+            <strong style="color:#fff;">Renogy 200W Portable Solar Panel Kit</strong>
+            <p style="margin:0.2rem 0 0;color:#B0B0B0;font-size:0.9rem;">160W folding panel with kickstand, alligator clips, and carry bag — the best bang for the buck for portable overlanding solar</p>
+          </div>
+          <a href="https://www.amazon.com/s?k=Renogy+200W+solar+panel+overlanding&tag=jchristian253-20" target="_blank" rel="nofollow noopener" style="background:#E8640A;color:#fff;padding:0.45rem 1rem;border-radius:6px;font-size:0.85rem;font-weight:600;white-space:nowrap;text-decoration:none;">Buy on Amazon &rarr;</a>
+        </div>
+
+        <div style="display:flex;justify-content:space-between;align-items:center;background:#1D1D1D;border-radius:8px;padding:1rem 1.25rem;flex-wrap:wrap;gap:0.5rem;">
+          <div>
+            <strong style="color:#fff;">Victron SmartSolar MPPT 100V/20A Charge Controller</strong>
+            <p style="margin:0.2rem 0 0;color:#B0B0B0;font-size:0.9rem;">The gold standard for charge controllers — Bluetooth monitoring, high efficiency, works with any battery chemistry</p>
+          </div>
+          <a href="https://www.amazon.com/s?k=Victron+SmartSolar+MPPT+charge+controller&tag=jchristian253-20" target="_blank" rel="nofollow noopener" style="background:#E8640A;color:#fff;padding:0.45rem 1rem;border-radius:6px;font-size:0.85rem;font-weight:600;white-space:nowrap;text-decoration:none;">Buy on Amazon &rarr;</a>
+        </div>
+
+        <div style="display:flex;justify-content:space-between;align-items:center;background:#1D1D1D;border-radius:8px;padding:1rem 1.25rem;flex-wrap:wrap;gap:0.5rem;">
+          <div>
+            <strong style="color:#fff;">Battle Born 100Ah Lithium Battery</strong>
+            <p style="margin:0.2rem 0 0;color:#B0B0B0;font-size:0.9rem;">Battle Born 100Ah 12V LiFePO4 — lightweight, 10000 charge cycle rating, 10-year warranty. Best AGM replacement for off-grid use.</p>
+          </div>
+          <a href="https://www.amazon.com/s?k=Battle+Born+100Ah+lithium+battery&tag=jchristian253-20" target="_blank" rel="nofollow noopener" style="background:#E8640A;color:#fff;padding:0.45rem 1rem;border-radius:6px;font-size:0.85rem;font-weight:600;white-space:nowrap;text-decoration:none;">Buy on Amazon &rarr;</a>
+        </div>
+
+      </div>
+      <p style="margin-top:1.25rem;color:#888;font-size:0.78rem;line-height:1.5;">As an Amazon Associate, I earn from qualifying purchases. These links help support WiredAndBuilt at no extra cost to you. See our <a href="../affiliate-disclosure.html" style="color:#E8640A;">Affiliate Disclosure</a> for details.</p>
+    </div>
+
+    <h2 id="battery">Step 3: Size Your Battery Bank</h2>
+
+    <p>Your battery bank stores the solar energy for use at night and during cloudy stretches. The key metric is <strong>usable capacity</strong>, which depends on battery chemistry.</p>
+
+    <p><strong>Lead-acid / AGM:</strong> Only discharge to 50% depth-of-discharge (DoD) if you want the battery to last. So a 100Ah lead-acid battery gives you 50 usable Ah.</p>
+
+    <p><strong>Lithium (LiFePO4):</strong> Can be discharged to 80-100% DoD without significant cycle life reduction. A 100Ah LiFePO4 gives you 80-100 usable Ah.</p>
+
+    <p>For our 1,010 Wh/day example, we'd want at least <strong>1,200-1,500 Wh of usable capacity</strong>. At 12V, that's 100-125 Ah of usable capacity, which means:</p>
+
+    <ul>
+      <li><strong>200Ah lead-acid bank</strong> (100Ah usable) — minimum, tight margin</li>
+      <li><strong>100Ah LiFePO4</strong> (100Ah usable) — comfortable at full capacity</li>
+      <li><strong>200Ah LiFePO4</strong> (160Ah usable) — plenty for multi-day boondocking</li>
+    </ul>
+
+    <p>The lithium premium is real but justified for off-grid use: they last 3-5x longer, weigh half as much, and you can use more of their capacity. If you already have a lead-acid house bank, don't rip it out — just be honest about the usable capacity.</p>
+
+    <h2 id="controller">Step 4: Pick a Charge Controller</h2>
+
+    <p>The charge controller sits between your panels and your battery, regulating the voltage and current to charge your battery safely and efficiently. There are two types: <strong>PWM</strong> (Pulse Width Modulation) and <strong>MPPT</strong> (Maximum Power Point Tracking).</p>
+
+    <p><strong>PWM controllers</strong> are cheap and simple. They basically connect the panel directly to the battery and reduce voltage by switching. You lose 15-25% of your panel's potential output, especially in cool conditions where panels are actually most efficient.</p>
+
+    <p><strong>MPPT controllers</strong> are smarter. They convert excess voltage to additional current, extracting the maximum power from your panels. In most real-world conditions, an MPPT controller recovers 20-30% more energy from the same panels. For any system over 100W, MPPT is worth the ~$50 premium.</p>
+
+    <p><strong>Sizing your controller:</strong> Match the controller's maximum input voltage to your panel's open-circuit voltage (check the panel spec sheet), and make sure the amp rating exceeds your panel's maximum output current. A 200W panel at 12V produces about 16A max — get a controller rated for at least 20A to have headroom.</p>
+
+    <h2 id="wiring">Step 5: Wire It All Together</h2>
+
+    <p>Wiring is where most overlanding solar systems fail — either from undersized wire causing voltage drop, or from poor connections causing corrosion and intermittent faults.</p>
+
+    <p><strong>Wire sizing:</strong> For runs up to 10 feet from panel to controller, use 10 AWG wire for 200W systems. For longer runs or 400W+ systems, go to 8 AWG. Voltage drop kills performance — if your 20-foot panel cable is dropping 2V at 10A, you've lost 20W before it reaches the controller.</p>
+
+    <p><strong>Connections:</strong> Use Anderson PowerPole connectors for the panel-to-controller connection — they're weatherproof, genderless, and the standard in overlanding and solar for good reason. Avoid the twist-on wire nuts that come in some cheap kit boxes.</p>
+
+    <p><strong>Fusing:</strong> Fuse the positive battery terminal (or both ends of the battery bank if using multiple batteries) with a DC fuse sized to protect the wire. A 200W system at 12V producing 16A max should use a 20A fuse. Consult a wire ampacity chart for your exact gauge.</p>
+
+    <h3>Basic Wiring Sequence</h3>
+
+    <ol>
+      <li><strong>Connect charge controller to battery first</strong> — this powers the controller and lets it read battery state before accepting solar input</li>
+      <li><strong>Connect solar panels to controller</strong> — with panels in good sun, verify controller shows charging</li>
+      <li><strong>Connect loads to battery</strong> (fridge, USB outlets, etc.) — never connect loads directly to the solar panel wire</li>
+      <li><strong>Install system fuse</strong> near battery positive terminal</li>
+    </ol>
+
+    <h2 id="tips">Pro Tips From 6 Months of Off-Grid Living</h2>
+
+    <p>After running solar on my Tacoma for six months of weekend trips and one two-week boondocking run through Utah and Nevada, here are the things I wish I'd known from day one:</p>
+
+    <ul>
+      <li><strong>Track your actual consumption with a Victron battery monitor.</strong> The Bluetooth app shows you exactly how much you're pulling in and pulling out per day. You can't manage what you can't measure.</li>
+      <li><strong>Shade kills panels disproportionately.</strong> A panel in partial shade can produce 80% less power than a shaded panel would suggest. Spend 10 minutes repositioning before you accept a shady spot.</li>
+      <li><strong>Clean your panels.</strong> Dust, pollen, and road grime can reduce output by 10-20% between washes. A quick hose-off every few days keeps them at full output.</li>
+      <li><strong>Angle panels toward the sun at midday.</strong> Most portable panels have built-in kickstands. Aiming them perpendicular to the sun at peak hours can double midday output compared to flat-laying.</li>
+      <li><strong>Keep a 15-foot extension cable.</strong> Some campsites have perfect sun exposure 15 feet from where you can park. A long MC4 extension cable gives you flexibility without sacrificing panel positioning.</li>
+    </ul>
+
+    <p>The bottom line: solar for overlanding works incredibly well when sized correctly. Do the math first, buy quality components once, wire it properly, and you'll forget you ever worried about power. Park where you want, stay as long as you want, and let the sun do the work.</p>
+
+    <hr style="border-color:#333;margin:3rem 0;">
+
+    <p><strong>Running a solar setup on your rig?</strong> Questions, recommendations, or things you'd do differently — I'd love to hear them. Reach out or drop a comment below.</p>
+
+  </article>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="../">Home</a>
+        <a href="../#articles">Articles</a>
+        <a href="../#newsletter">Newsletter</a>
+        <a href="../privacy-policy.html">Privacy Policy</a>
+        <a href="../affiliate-disclosure.html">Affiliate Disclosure</a>
+        <a href="../terms-of-service.html">Terms of Service</a>
+      </div>
+      <p>&copy; 2025 WiredAndBuilt. All rights reserved.</p>
+      <p style="margin-top:0.5rem;font-size:0.75rem;color:#888;">⚠️ <strong>Disclaimer:</strong> All content on WiredAndBuilt is for informational and educational purposes only. Any DIY, electrical, or mechanical projects you undertake are done at your own risk and skill level. Always follow local codes, manufacturer instructions, and consult a licensed professional when required. WiredAndBuilt assumes no liability for any injury, damage, or loss resulting from the use of information on this site.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
